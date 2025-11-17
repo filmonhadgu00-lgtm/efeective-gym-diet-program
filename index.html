@@ -1,4 +1,4 @@
-ፊልሞን, [11/17/2025 3:00 AM]
+ፊልሞን, [11/17/2025 3:07 AM]
 <!DOCTYPE html>
 <html lang="am">
 <head>
@@ -7,11 +7,7 @@
 
   <title>Effective Gym Diet Program</title>
 
-  <!-- SEO Meta -->
   <meta name="description" content="የተስተካከለ የጂም ዳይት ፕሮግራም፣ የክብደት መቀነስ፣ ጡንቻ መጨመር እና የጤና ችግኝ መመለስ እንዲረዱ የተሰራ የተለያዩ ፕላኖች!" />
-
-  <!-- Google Verification -->
-  <meta name="google-site-verification" content="khMD3MOBlsZLg5NmqvvLOg33xTmKRDZEWeDnH_c7cdc" />
 
   <style>
     body {
@@ -28,7 +24,6 @@
       color: gold;
       font-size: 2em;
       font-weight: bold;
-      letter-spacing: 1px;
     }
 
     .container {
@@ -120,8 +115,8 @@
   <div class="container">
     <h2>መረጃዎን ይሙሉ</h2>
 
-    <form id="dietForm" action="https://formsubmit.co/filmonhadgu00@gmail.com" method="POST" target="hidden_iframe" onsubmit="showResult()">
-
+    <form id="dietForm" action="https://formsubmit.co/filmonhadgu00@gmail.com" method="POST" target="hidden_iframe">
+      
       <label>ሙሉ ስም:</label>
       <input type="text" name="ሙሉ ስም" required />
 
@@ -140,6 +135,9 @@
 
       <label>ቁመት (cm):</label>
       <input type="number" name="ቁመት" required />
+
+      <label>ስልክ ቁጥር:</label>
+      <input type="tel" name="ስልክ" placeholder="0987xxxxxx" required />
 
       <label>ዓላማ:</label>
       <select name="ዓላማ" required>
@@ -166,7 +164,7 @@
 
     <iframe name="hidden_iframe" style="display:none;"></iframe>
 
-ፊልሞን, [11/17/2025 3:00 AM]
+ፊልሞን, [11/17/2025 3:07 AM]
 <div id="result" class="result">
       <h2>✔ ጥያቄዎ ተልኳል!</h2>
       <p>ዋጋ: <strong>500 ETB</strong></p>
@@ -185,9 +183,12 @@
   </div>
 
   <script>
-    function showResult() {
+    // Show result div after submission without page reload
+    const form = document.getElementById('dietForm');
+    form.addEventListener('submit', function(e) {
+      // show result immediately
       document.getElementById('result').style.display = 'block';
-    }
+    });
   </script>
 
 </body>
