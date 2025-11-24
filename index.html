@@ -3,136 +3,143 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Effective Gym Diet Plan</title>
-
+  <title>Effective Gym Diet Program</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, black, #c9a227, #e5e4e2, #ffd700);
+      font-family: 'Poppins', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
       text-align: center;
-      color: white;
-    }
-
-    h1 {
-      margin-top: 30px;
+      padding: 30px;
+      background-color: #111;
       color: gold;
-      font-size: 32px;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
-    form {
-      width: 90%;
-      max-width: 450px;
-      margin: 30px auto;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 25px;
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background: #1a1a1a;
+      padding: 30px;
       border-radius: 15px;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+      box-shadow: 0 0 15px gold;
     }
 
-    input, select {
-      width: 90%;
-      padding: 12px;
-      margin: 10px 0;
-      border: none;
+    h2 {
+      color: gold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
       border-radius: 8px;
-      font-size: 16px;
-      background: rgba(255, 255, 255, 0.9);
-      color: black;
+      border: 1px solid gold;
+      background-color: #111;
+      color: #fff;
+      font-size: 1em;
     }
 
     button {
-      width: 90%;
+      width: 100%;
+      margin-top: 20px;
       padding: 12px;
       background: gold;
+      color: black;
+      font-size: 1.1em;
       border: none;
       border-radius: 8px;
-      font-size: 18px;
       cursor: pointer;
       font-weight: bold;
-      margin-top: 10px;
     }
 
-    #messageBox {
-      margin-top: 25px;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      padding: 20px;
+    button:hover {
+      background: #e6b800;
+    }
+
+    .result {
       display: none;
-      background: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      margin-top: 30px;
+      background-color: #111;
+      padding: 20px;
       border-radius: 10px;
-      width: 90%;
-      max-width: 450px;
-      margin-left: auto;
-      margin-right: auto;
+      color: gold;
+      box-shadow: 0 0 10px gold;
     }
   </style>
 </head>
 <body>
 
-  <h1>Effective Gym Diet Plan</h1>
-  <p>Fill your information to get your personalized diet plan</p>
+  <header>Effective Gym Diet Program</header>
 
-  <form action="https://formsubmit.co/filmonhadgu00@gmail.com" method="POST" id="dietForm">
+  <div class="container">
+    <h2>Fill Out Your Details</h2>
+    <form id="dietForm" action="https://formsubmit.co/filmonhadgu00@gmail.com" method="POST">
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
 
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
+      <label>Phone Number:</label>
+      <input type="tel" name="phone" required>
 
-    <input type="text" name="name" placeholder="Your Name" required>
+      <label>Age:</label>
+      <input type="number" name="age" required>
 
-    <select name="goal" required>
-      <option value="" disabled selected>Select your goal</option>
-      <option value="Lose Weight">Lose Weight</option>
-      <option value="Gain Muscle">Gain Muscle</option>
-      <option value="Reverse">Reverse</option>
-      <option value="Reverse Type 2 Diabetes">Reverse Type 2 Diabetes</option>
-      <option value="Reverse High Blood Pressure">Reverse High Blood Pressure</option>
-      <option value="Reverse High Uric Acid">Reverse High Uric Acid</option>
-      <option value="Reverse Chronic Disease">Reverse Chronic Disease</option>
-    </select>
+      <label>Weight (kg):</label>
+      <input type="number" name="weight" required>
 
-    <input type="number" name="age" placeholder="Your Age" required>
-    <input type="number" name="weight" placeholder="Your Weight (kg)" required>
-    <input type="number" name="height" placeholder="Your Height (cm)" required>
+      <label>Height (cm):</label>
+      <input type="number" name="height" required>
 
-    <input type="text" name="likes" placeholder="Foods You Like" required>
-    <input type="text" name="dislikes" placeholder="Foods You Hate" required>
+      <label>Foods You Like:</label>
+      <textarea name="foods_like" rows="3" required></textarea>
 
-    <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <label>Foods You Hate:</label>
+      <textarea name="foods_hate" rows="3" required></textarea>
 
-    <button type="submit">Submit</button>
-  </form>
+      <button type="submit">Submit</button>
+      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
 
-  <div id="messageBox"></div>
+    <div id="result" class="result">
+      <h2>✅ Your Request Is Sent!</h2>
+      <p>Price: <strong>500 ETB</strong></p>
+      <p>💰 CBE Account: <strong>100063663054</strong></p>
+      <p>📱 Phone: <strong>0987815950</strong></p>
+      <p>📲 Telegram: <strong>@Fila_fili</strong></p>
+      <p>We’ll contact you soon to start your custom diet plan!</p>
+    </div>
+  </div>
 
   <script>
-    const form = document.getElementById("dietForm");
-    const messageBox = document.getElementById("messageBox");
+    const form = document.getElementById('dietForm');
+    const result = document.getElementById('result');
 
-    const telegram = "@Fila_fili";
-    const phone = "0987815950";
-    const cbe = "100063663054";
-    const price = "500 ETB";
-
-    form.addEventListener("submit", function(event) {
-      event.preventDefault();
-
-      messageBox.style.display = "block";
-      messageBox.innerHTML = 
-        ✔️ Your information was sent successfully!<br><br>
-        We will prepare your diet plan soon.<br><br>
-        <strong>Price:</strong> ${price}<br><br>
-        <strong>Contact Us</strong><br>
-        Telegram: ${telegram}<br>
-        Phone: ${phone}<br>
-        CBE Account: ${cbe}
-      ;
-
-      setTimeout(() => form.submit(), 1200);
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+      }).then(() => {
+        form.reset();
+        result.style.display = 'block';
+      });
     });
   </script>
-
 </body>
 </html>
