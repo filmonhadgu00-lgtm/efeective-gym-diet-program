@@ -1,145 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="am">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Effective Gym Diet Program</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #0a0a0a;
-      color: #fff;
-    }
-
-    header {
-      text-align: center;
-      padding: 30px;
-      background-color: #111;
-      color: gold;
-      font-size: 2em;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    .container {
-      max-width: 500px;
-      margin: 50px auto;
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 15px gold;
-    }
-
-    h2 {
-      color: gold;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-top: 15px;
-      font-weight: 500;
-    }
-
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border-radius: 8px;
-      border: 1px solid gold;
-      background-color: #111;
-      color: #fff;
-      font-size: 1em;
-    }
-
-    button {
-      width: 100%;
-      margin-top: 20px;
-      padding: 12px;
-      background: gold;
-      color: black;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background: #e6b800;
-    }
-
-    .result {
-      display: none;
-      text-align: center;
-      margin-top: 30px;
-      background-color: #111;
-      padding: 20px;
-      border-radius: 10px;
-      color: gold;
-      box-shadow: 0 0 10px gold;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Effective Gym Diet Program</title>
+<style>
+body {margin:0; font-family:'Poppins',sans-serif; background:#0a0a0a; color:#fff;}
+header {text-align:center; padding:30px; background:#111; color:gold; font-size:2em; font-weight:bold; letter-spacing:1px;}
+.container {max-width:500px; margin:50px auto; background:#1a1a1a; padding:30px; border-radius:15px; box-shadow:0 0 15px gold;}
+h2 {color:gold; text-align:center; margin-bottom:20px;}
+label {display:block; margin-top:15px; font-weight:500;}
+input, textarea {width:100%; padding:10px; margin-top:5px; border-radius:8px; border:1px solid gold; background:#111; color:#fff; font-size:1em;}
+button {width:100%; margin-top:20px; padding:12px; background:gold; color:black; font-size:1.1em; border:none; border-radius:8px; cursor:pointer; font-weight:bold;}
+button:hover {background:#e6b800;}
+.step {display:none;}
+.step.active {display:block;}
+.result {display:none; text-align:center; margin-top:30px; background:#111; padding:20px; border-radius:10px; color:gold; box-shadow:0 0 10px gold;}
+.checkbox-group label {display:block; margin-top:10px;}
+.info {margin-top:20px; text-align:center; color:gold; font-weight:bold;}
+.copy-btn {margin-top:10px; padding:8px; background:#e6b800; border:none; border-radius:5px; cursor:pointer; font-weight:bold;}
+.copy-btn:hover {background:gold;}
+</style>
 </head>
 <body>
 
-  <header>Effective Gym Diet Program</header>
+<header>diet program </header>
 
-  <div class="container">
-    <h2>Fill Out Your Details</h2>
-    <form id="dietForm" action="https://formsubmit.co/filmonhadgu00@gmail.com" method="POST">
-      <label>Full Name:</label>
+<div class="container">
+  <form id="dietForm" action="https://formsubmit.co/filmonhadgu00@gmail.com" method="POST">
+
+    <!-- Step 1 -->
+    <div class="step active">
+      <h2>የግል መረጃ</h2>
+      <label>ሙሉ ስም:</label>
       <input type="text" name="name" required>
 
-      <label>Phone Number:</label>
+      <label>ስልክ ቁጥር:</label>
       <input type="tel" name="phone" required>
 
-      <label>Age:</label>
+      <label>እድሜ:</label>
       <input type="number" name="age" required>
 
-      <label>Weight (kg):</label>
+      <label>ክብደት (ኪ.ግ):</label>
       <input type="number" name="weight" required>
 
-      <label>Height (cm):</label>
+      <label>ቁመት (ሴ.ሜ):</label>
       <input type="number" name="height" required>
 
-      <label>Foods You Like:</label>
+      <button type="button" id="next1">ቀጣይ</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step">
+      <h2>ምግቦች</h2>
+      <label>የምትወዱ ምግቦች:</label>
       <textarea name="foods_like" rows="3" required></textarea>
 
-      <label>Foods You Hate:</label>
+      <label>የምትጠሉ ምግቦች:</label>
       <textarea name="foods_hate" rows="3" required></textarea>
 
-      <button type="submit">Submit</button>
-      <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
-      <input type="hidden" name="_captcha" value="false">
-    </form>
-
-    <div id="result" class="result">
-      <h2>✅ Your Request Is Sent!</h2>
-      <p>Price: <strong>500 ETB</strong></p>
-      <p>💰 CBE Account: <strong>100063663054</strong></p>
-      <p>📱 Phone: <strong>0987815950</strong></p>
-      <p>📲 Telegram: <strong>@Fila_fili</strong></p>
-      <p>We’ll contact you soon to start your custom diet plan!</p>
+      <button type="button" id="back1">ተመለስ</button>
+      <button type="button" id="next2">ቀጣይ</button>
     </div>
+
+    <!-- Step 3 -->
+    <div class="step">
+      <h2>ዓላማዎች</h2>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="goal[]" value="ክብደት መቀነስ"> ክብደት መቀነስ</label>
+        <label><input type="checkbox" name="goal[]" value="ክብደት መጨመር"> ክብደት መጨመር</label>
+        <label><input type="checkbox" name="goal[]" value="ዳይበት መቀነስ"> ዳይበት መቀነስ</label>
+        <label><input type="checkbox" name="goal[]" value="2 ዓይነት ስኳር ህመም መቀነስ"> 2 ዓይነት ስኳር ህመም መቀነስ</label>
+        <label><input type="checkbox" name="goal[]" value="ከፍተኛ ደም ግፊት መቀነስ"> ከፍተኛ ደም ግፊት መቀነስ</label>
+        <label><input type="checkbox" name="goal[]" value="ከፍተኛ ዩሪክ አሲድ መቀነስ"> ከፍተኛ ዩሪክ አሲድ መቀነስ</label>
+        <label><input type="checkbox" name="goal[]" value="ረጅም ጊዜ የሚቆይ በሽታ መቀነስ"> ረጅም ጊዜ የሚቆይ በሽታ መቀነስ</label>
+      </div>
+
+      <div class="info">
+        ለተጨማሪ መረጃ: <br>
+        📱 ስልክ: <strong>+251 95 303 2359</strong><br>
+        📲 ቴሌግራም: <strong>@Fila_fili</strong>
+      </div>
+
+      <button type="button" id="back2">ተመለስ</button>
+      <button type="submit">ላክ</button>
+    </div>
+
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+
+  <div id="result" class="result">
+    <h2>✅ ጥያቄዎ ተልኳል!</h2>
+    <p>እባኮት ዋጋው ይከፍሉ እና ስክሪንሹቱን ወደ ቴሌግራም ይላኩ:</p>
+    <p>💰 ዋጋ: <strong>3000 ETB</strong></p>
+    <p>🏦 መክፈያ አካውንት (CBE): <strong>1000250266988 - Abel Welday</strong></p>
+    <button class="copy-btn" id="openTelegram">ቴሌግራም ክፈት</button>
+    <p>እኛ በቅርቡ እንደ ሆነ ለመርምረው እንገናኛለን!</p>
   </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const steps = document.querySelectorAll('.step');
+  let currentStep = 0;
 
-  <script>
-    const form = document.getElementById('dietForm');
-    const result = document.getElementById('result');
+  function showStep(n){
+    steps.forEach(step => step.classList.remove('active'));
+    steps[n].classList.add('active');
+  }
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form)
-      }).then(() => {
-        form.reset();
-        result.style.display = 'block';
-      });
+  document.getElementById('next1').addEventListener('click',()=>{currentStep=1; showStep(currentStep);});
+  document.getElementById('back1').addEventListener('click',()=>{currentStep=0; showStep(currentStep);});
+  document.getElementById('next2').addEventListener('click',()=>{currentStep=2; showStep(currentStep);});
+  document.getElementById('back2').addEventListener('click',()=>{currentStep=1; showStep(currentStep);});
+
+  const form=document.getElementById('dietForm');
+  const result=document.getElementById('result');
+
+  form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    fetch(form.action,{method:'POST', body:new FormData(form)})
+    .then(()=>{
+      form.reset();
+      steps.forEach(step=>step.classList.remove('active'));
+      result.style.display='block';
     });
-  </script>
+  });
+
+  document.getElementById('openTelegram').addEventListener('click',()=>{
+    window.open('https://t.me/Fila_fili', '_blank');
+  });
+});
+</script>
+
 </body>
 </html>
